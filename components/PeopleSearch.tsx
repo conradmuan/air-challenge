@@ -27,12 +27,17 @@ export const PeopleSearch: React.FC<PeopleSearchProps> = ({ people }) => {
 
   return (
     <>
-      <form action="#search" onSubmit={formSubmitHandler}>
+      <form
+        action="#search"
+        onSubmit={formSubmitHandler}
+        className="mb-8 xl:mb-12"
+      >
         <input
           type="text"
           placeholder="Search in Air HQ"
           value={searchQuery}
           onChange={searchHandler}
+          className="py-2.5 px-4 rounded border border-air-grey hover:bg-air-light-grey hover:border-air-blue text-sm w-full"
         />
       </form>
       <Results peopleFiltered={peopleFiltered} />
