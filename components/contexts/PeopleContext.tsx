@@ -1,14 +1,7 @@
 import { createContext, useContext } from "react";
+import { Person } from "../../interface/person";
 
 import peopleData from "../../data/people.json";
-
-interface Person {
-  id: number;
-  name: string;
-  email: string;
-  avatar: string;
-  description: string;
-}
 
 interface PeopleContextProps {
   people: Person[];
