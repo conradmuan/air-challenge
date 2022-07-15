@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@ashlar-packages/react-virtualized-auto-sizer@github:Ashlar/react-virtualized-auto-sizer":
+"@ashlar-packages/react-virtualized-auto-sizer@git+https://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:x-oauth-basic@github.com/Ashlar/react-virtualized-auto-sizer.git":
   "resolved" "git+ssh://git@github.com/Ashlar/react-virtualized-auto-sizer.git#6b61df4b145799387959b7338427c9b2225a7576"
   "version" "1.0.7"
 
