@@ -22,3 +22,5 @@ describe("App", () => {
       .should("have.length", 0);
   });
 });
+
+export {};
