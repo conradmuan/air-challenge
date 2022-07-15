@@ -38,6 +38,7 @@ export const PeopleSearch: React.FC<PeopleSearchProps> = ({ people }) => {
           value={searchQuery}
           onChange={searchHandler}
           className="py-2.5 px-4 rounded border border-air-grey hover:bg-air-light-grey hover:border-air-blue text-sm w-full"
+          data-search
         />
       </form>
       <Results peopleFiltered={peopleFiltered} />

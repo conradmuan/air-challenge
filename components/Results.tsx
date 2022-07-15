@@ -16,7 +16,7 @@ export const Results: React.FC<ResultsProps> = ({ peopleFiltered }) => {
   }) => {
     const person = peopleFiltered[index];
     return (
-      <div key={person.id} style={style}>
+      <div key={person.id} style={style} data-result>
         <div className="flex space-x-4" key={person.id}>
           <div className="flex-initial w-12 md:w-24">
             <img src={person.avatar} alt={person.name} />
@@ -36,6 +36,7 @@ export const Results: React.FC<ResultsProps> = ({ peopleFiltered }) => {
     <div
       style={{ width: "100%", height: "calc(100vh - 26rem)" }}
       className="no-scrollbars"
+      data-results-container
     >
       <AutoSizer>
         {({ width, height }: { width: number; height: number }) => (
