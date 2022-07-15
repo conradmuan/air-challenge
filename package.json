@@ -14,7 +14,7 @@
     "test": "start-server-and-test dev http://localhost:3000 cypress:headless"
   },
   "dependencies": {
-    "@ashlar-packages/react-virtualized-auto-sizer": "git+https://${GITHUB_TOKEN}:x-oauth-basic@github.com/Ashlar/react-virtualized-auto-sizer.git",
+    "@ashlar-packages/react-virtualized-auto-sizer": "https://github.com/Ashlar/react-virtualized-auto-sizer",
     "next": "12.2.2",
     "quick-score": "^0.2.0",
     "react": "18.2.0",
