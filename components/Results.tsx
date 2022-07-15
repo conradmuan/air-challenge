@@ -7,16 +7,22 @@ interface ResultsProps {
 }
 
 export const Results: React.FC<ResultsProps> = ({ peopleFiltered }) => {
-  const ResultRow = ({ index, style }: { [key: string]: any }) => {
+  const ResultRow = ({
+    index,
+    style,
+  }: {
+    index: number;
+    style: React.CSSProperties;
+  }) => {
     const person = peopleFiltered[index];
     return (
       <div key={person.id} style={style}>
-        <div className="flex space-x-4 mb-4 xl:mb-6" key={person.id}>
+        <div className="flex space-x-4" key={person.id}>
           <div className="flex-initial w-12 md:w-24">
             <img src={person.avatar} alt={person.name} />
           </div>
           <div className="flex-1">
-            <h1 className="font-bold mb-2">{person.name}</h1>
+            <h1 className="font-bold mt-2 mb-2">{person.name}</h1>
             <p className="text-sm text-air-dark-grey-100">
               {person.description}
             </p>
@@ -36,7 +42,7 @@ export const Results: React.FC<ResultsProps> = ({ peopleFiltered }) => {
           <List
             className="result"
             itemCount={peopleFiltered.length}
-            itemSize={96}
+            itemSize={112}
             width={width}
             height={height}
           >
