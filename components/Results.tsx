@@ -25,8 +25,12 @@ export const Results: React.FC<ResultsProps> = ({ peopleFiltered }) => {
       </div>
     );
   };
+
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
+    <div
+      style={{ width: "100%", height: "calc(100vh - 26rem)" }}
+      className="no-scrollbars"
+    >
       <AutoSizer>
         {({ width, height }: { width: number; height: number }) => (
           <List
